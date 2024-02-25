@@ -1,0 +1,22 @@
+section {
+  display: grid;
+  /* grid-template-rows: repeat(2,30px); */
+  grid-template-columns: repeat(auto-fit, minmax(140px,1fr));
+  gap: 5px;
+  width: 100vw;
+}
+
+section > img {
+  border-radius: 5px;
+  width: 150px;
+  /* flex-grow: 1; */
+  height: 130px;
+  object-fit: cover;
+  /* object-position: 0px 0px; */
+  cursor: pointer;
+}
+
+section > img:hover{
+  border-color: aqua;
+  box-shadow: 2px 2px 2px 2px aqua;
+}
