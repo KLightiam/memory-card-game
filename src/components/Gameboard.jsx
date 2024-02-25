@@ -71,7 +71,7 @@ export default function Gameboard() {
               Restart Game
             </button>
           </>
-        ) : !cards ? (
+        ) : cards.length === 0 ? (
           <p>Images loading...</p>
         ) : (
           <section>
