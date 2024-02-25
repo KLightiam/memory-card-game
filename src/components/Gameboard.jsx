@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import "../styles/Gameboard.css";
+// import "../styles/Gameboard.css";
 import Header from "./Header";
 import shuffleArr from "./shuffleArr";
 
@@ -25,13 +25,13 @@ export default function Gameboard() {
         srcSet=""
         onClick={({ target }) => {
           if (isClicked.includes(card)) {
-            console.log("its clicked");
+            // console.log("its clicked");
             setIsGameOver(true);
             setIsClicked([]);
           } else {
             // setIsClicked(true);
             setIsClicked((prev) => [...prev, card]);
-            console.log(isClicked);
+            // console.log(isClicked);
             setCards(shuffleArr([...cards]));
             setScore(score + 1);
             score >= highScore ? setHighScore(score + 1) : null;

@@ -1,3 +1,29 @@
+:root{
+  background-color:whitesmoke;
+}
+
+
+
+.header{
+  display: flex;
+  /* margin-left: auto; */
+  padding: 10px;
+}
+
+.header > div:first-child > p:first-child{
+  font-size: 2rem;
+  color: brown;
+}
+
+.header > div:nth-child(2){
+  margin-left: auto;
+  /* color: brown; */
+}
+
+.header > div:nth-child(2) span{
+  color: brown;
+}
+
 section {
   display: grid;
   /* grid-template-rows: repeat(2,30px); */

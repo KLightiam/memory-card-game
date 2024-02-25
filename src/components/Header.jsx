@@ -5,10 +5,10 @@ export default function Header({score,highScore}){
     // const [score1,setScore] = useState(score);
     // const [highScore1, setHighScore] = useState(highScore);
     return (
-        <>
+        <div className="header">
             <AppName />
             <Scoreboard score={score} highScore={highScore}/>
-        </>
+        </div>
     )
 }
 
@@ -24,8 +24,8 @@ function AppName(){
 function Scoreboard({score,highScore}){
     return(
         <div>
-            <p>Score: {score}</p>
-            <p>Highest Score: {highScore}</p>
+            <p>Score: <span>{score}</span></p>
+            <p>Highest Score: <span>{highScore}</span></p>
         </div>
     )
 }
